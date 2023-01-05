@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,28 +17,33 @@
 
     <main>
         <section class="entrada-encriptador">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea name="" id="area-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div class="aviso">
                 <img src="img/bi_exclamation-circle-fill.png" alt="icono-exclamacion">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
-            <input class="boton-encriptar" type="button" value="Encriptar">
-            <input class="boton-desencriptar" type="button" value="Desencriptar">
+            <div id="botonesED">
+                <input onclick="encriptar()" class="boton-encriptar" type="button" value="Encriptar">
+                <input onclick="desencriptar()" class="boton-desencriptar" type="button" value="Desencriptar">
+            </div>
         </section>
         <section class="salida-encriptador">
-            <div class="info-salida">
-                <img src="img/Muñeco.png" alt="Imagen-mensaje-no-encontrado">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div id="info-salida">
+                <div>
+                    <img src="img/Muñeco.png" alt="Imagen-mensaje-no-encontrado">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
             </div>
-            <div class="info-encriptada">
-
+            <div id="info-encriptada">
+                <textarea name="" id="area-encriptada" readonly="true" cols="30" rows="5"></textarea>
+                <input onclick="copy()" class="boton-copiar" type="button" value="Copiar">
             </div>
         </section>
     </main>
 
     <footer>
-
+        <p id="pie-pagina">© 2023 Pagina desarrollada por Andrés Montes</p>
     </footer>
 </body>
 </html>

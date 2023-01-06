@@ -1,3 +1,16 @@
+//Funcion para cambiar tema de la pagina web
+function cambiarTema(temaSeleccionado){
+    let tema = "";
+    if (temaSeleccionado == "anime"){
+        tema = "css/style-anime.css";
+    }else if(temaSeleccionado == "dev"){
+        tema = "css/style-dev.css";
+    }else if(temaSeleccionado == "alura"){
+        tema = "css/style.css";
+    }   
+    document.getElementById("tema-pagina").href = tema;
+}
+
 //Variable con las letras del abecedario para ser verificadas
 var letras = " abcdefghijklmnñopqrstuvwxyz";
 
@@ -26,7 +39,9 @@ function encriptar(){
     let mensajeEncriptado = "";
     if (verificarTexto(texto)){
         if (texto == mensajeEncriptado){
-            alert("¡Por favor, ingrese un texto para encriptar!")
+            document.getElementById("msj-aviso").innerHTML = ("<a id='simbolo-aviso'>&excl;</a> ¡Por favor, ingrese un texto para encriptar!");
+            document.getElementById("aviso").style = "color:#ff0000; font-weight:bold";
+            document.getElementById("simbolo-aviso").style = "background:#ff0000; font-weight:bold";
         }
         else if (texto != mensajeEncriptado){
             for(let i=0; i<numLetra; i++){
@@ -52,10 +67,15 @@ function encriptar(){
             document.getElementById("info-salida").style.display = "none";
             document.getElementById("info-encriptada").style.display = "block";
             document.getElementById("area-encriptada").value = mensajeEncriptado;
+            document.getElementById("msj-aviso").innerHTML = ("<a id='simbolo-aviso'>&excl;</a> ¡Mensaje encriptado exitosamente!");
+            document.getElementById("aviso").style = "color:#00dd00; font-weight:bold";  
+            document.getElementById("simbolo-aviso").style = "background:#00dd00; font-weight:bold";
         }
     }
     else{
-        alert("¡Por favor ingrese solamente letras en minuscula y sin acento!");
+        document.getElementById("msj-aviso").innerHTML = ("<a id='simbolo-aviso'>&excl;</a> ¡Por favor, ingrese solo letras minúsculas y sin acentos!");
+        document.getElementById("aviso").style = "color:#ff0000; font-weight:bold";
+        document.getElementById("simbolo-aviso").style = "background:#ff0000; font-weight:bold";
     } 
 }
 
@@ -66,7 +86,9 @@ function desencriptar(){
     let mensajeDesencriptado = "";
     if(verificarTexto(texto)){
         if (texto == mensajeDesencriptado){
-            alert("¡Por favor, ingrese un texto para Desencriptar!")
+            document.getElementById("msj-aviso").innerHTML = ("<a id='simbolo-aviso'>&excl;</a> ¡Por favor, ingrese un texto para desencriptar!");
+            document.getElementById("aviso").style = "color:#ff0000; font-weight:bold";
+            document.getElementById("simbolo-aviso").style = "background:#ff0000; font-weight:bold";
         }
         else if (texto != mensajeDesencriptado){
             for(let i=0; i<numLetra; i++){
@@ -96,11 +118,16 @@ function desencriptar(){
             }
             document.getElementById("info-salida").style.display = "none";
             document.getElementById("info-encriptada").style.display = "block";
-            document.getElementById("area-encriptada").value = mensajeDesencriptado;    
+            document.getElementById("area-encriptada").value = mensajeDesencriptado;   
+            document.getElementById("msj-aviso").innerHTML = ("<a id='simbolo-aviso'>&excl;</a> ¡Mensaje desencriptado exitosamente!");
+            document.getElementById("aviso").style = "color:#00dd00; font-weight:bold";
+            document.getElementById("simbolo-aviso").style = "background:#00dd00; font-weight:bold";   
         } 
     }
     else{
-        alert("¡Por favor ingrese solamente letras en minuscula y sin acento!");
+        document.getElementById("msj-aviso").innerHTML = ("<a id='simbolo-aviso'>&excl;</a> ¡Por favor, ingrese solo letras minúsculas y sin acentos!");
+        document.getElementById("aviso").style = "color:#ff0000; font-weight:bold";
+        document.getElementById("simbolo-aviso").style = "background:#ff0000; font-weight:bold";
     } 
 }
 
@@ -110,5 +137,7 @@ function copy(){
     let copyText = document.querySelector("#area-encriptada");
     copyText.select();
     document.execCommand("copy");
-    alert("¡Texto copiado!")
+    document.getElementById("aviso-copiado").style.display = "block";
+    document.getElementById("area-encriptada").style.height = "85%";
+    setInterval()
 }

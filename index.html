@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link id="tema-pagina" rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <img id="logo-alura" src="img/Logo.png" alt="Logo-alura">
+        <div id="contenedor-temas">
+            <h3>CAMBIAR TEMA</h3>
+            <ul id="lista-temas">
+                <li onclick="cambiarTema('alura')">Alura</li>
+                <li onclick="cambiarTema('anime')">Anime</li>
+                <li onclick="cambiarTema('dev')">Dev</li>
+            </ul>
+        </div>
     </header>
 
     <main>
         <section class="entrada-encriptador">
             <textarea name="" id="area-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div class="aviso">
-                <img src="img/bi_exclamation-circle-fill.png" alt="icono-exclamacion">
-                <p>Solo letras minúsculas y sin acentos</p>
+            <div id="aviso">
+                <p id="msj-aviso"><a id="simbolo-aviso">&excl;</a> Solo letras minúsculas y sin acentos</p>
             </div>
             <div id="botonesED">
                 <input onclick="encriptar()" class="boton-encriptar" type="button" value="Encriptar">
@@ -37,6 +44,7 @@
             </div>
             <div id="info-encriptada">
                 <textarea name="" id="area-encriptada" readonly="true" cols="30" rows="5"></textarea>
+                <p id="aviso-copiado">!Texto copiado¡</p>
                 <input onclick="copy()" class="boton-copiar" type="button" value="Copiar">
             </div>
         </section>

@@ -1,9 +1,10 @@
-@font-face {
+/*@font-face {
     font-family: 'Komigo';
     src: url("/fonts/Komigo3DRegular-rg1lK.ttf");
-    /* license: Freeware, Non-Commercial
-    link: https://www.fontspace.com/komigo-font-f88022 */
-}
+    
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
 
 html{
     height: 1080px;
@@ -12,8 +13,8 @@ html{
 
 body{
     height: 100%;
-    font-family: 'Komigo';
-    background: center/1080px no-repeat url("/img/fondoanime.webp") !important;
+    font-family: 'Sansita Swashed', cursive;
+    background: center/1080px no-repeat url("https://raw.githubusercontent.com/xHypnos/encriptador-texto/main/img/fondoanime.webp") !important;
 }
 
 header{
@@ -95,7 +96,7 @@ section{
     font-size: 20px;
     resize: none;
     padding: 10px; 
-    font-family: 'Komigo';
+    font-family: 'Sansita Swashed', cursive;
 }
 
 #aviso{
@@ -126,7 +127,7 @@ section{
     height: 60px;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Komigo';
+    font-family: 'Sansita Swashed', cursive;
     /* border-radius: 18px; */
     color: #205c3e;
     background: rgba(245, 217, 170, 0.9);
@@ -143,7 +144,7 @@ section{
 
 .boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
     zoom: 105%;
-    background: center no-repeat url("/img/caraanya.jpg");
+    background: center no-repeat url("https://raw.githubusercontent.com/xHypnos/encriptador-texto/main/img/caraanya.jpg");
     transition: 500ms;
     font-size: 24px;
 }
@@ -204,7 +205,7 @@ section{
     width: 90%;
     height: 90%;
     font-size: 20px;
-    font-family: 'Komigo';
+    font-family: 'Sansita Swashed', cursive;
     color: #205c3e;
     resize: none;
     outline: none;

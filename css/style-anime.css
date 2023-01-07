@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Komigo';
+    src: url("/fonts/Komigo3DRegular-rg1lK.ttf");
+    /* license: Freeware, Non-Commercial
+    link: https://www.fontspace.com/komigo-font-f88022 */
+}
+
+html{
+    height: 1080px;
+    background: linear-gradient(90deg, #8da79a 50%,#f5d9aa 50%);
+}
+
+body{
+    height: 100%;
+    font-family: 'Komigo';
+    background: center/1080px no-repeat url("/img/fondo-anime.webp") !important;
+}
+
+header{
+    background: rgb(245, 217, 170);
+    display: flex;
+    width: 60%;
+    padding: 5px;
+    margin: 30px;
+    border: 2px solid;
+    box-shadow: 7px 7px;
+}
+
+header img{
+    box-sizing: border-box;
+    display: block;
+    width: 200px;
+    height: 70px;
+}
+
+#contenedor-temas{
+    margin: auto 10%;
+    text-align: center;
+}
+
+#contenedor-temas h3{
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+#contenedor-temas li{
+    cursor: pointer;
+    display: inline;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    max-width: 1440px;
+    height: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+section{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.entrada-encriptador{
+    width: 900px;
+    height: 750px;
+}
+
+.entrada-encriptador textarea{
+    border: none;
+    outline: none;
+    /* border-radius: 18px; */
+    background: rgba(245, 217, 170, 0.6);
+    box-shadow: 0px 0px 20px #52685d;
+    width: 100%;
+    height: 70%;
+    color: #205c3e;
+    font-weight: bold;
+    font-size: 20px;
+    resize: none;
+    padding: 10px; 
+    font-family: 'Komigo';
+}
+
+#aviso{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    background: rgba(245, 217, 170, 0.8);
+    padding: 5px;
+}
+
+#simbolo-aviso{
+    display: inline-flex;
+    padding: 8px;
+    background: #495057;
+    shape-outside: circle();
+    clip-path: circle();
+    color: #ffffff;
+}
+
+#botonesED{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-encriptar, .boton-desencriptar, .boton-copiar{
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Komigo';
+    /* border-radius: 18px; */
+    color: #205c3e;
+    background: rgba(245, 217, 170, 0.9);
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    box-shadow: 7px 7px 0px ;    
+}
+
+.boton-copiar{
+    background: rgba(141, 167, 154,0.9);
+    color: #205c3e;
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
+    zoom: 105%;
+    background: center no-repeat url("/img/cara-anya.jpg");
+    transition: 500ms;
+    font-size: 24px;
+}
+
+.boton-encriptar:active, .boton-desencriptar:active, .boton-copiar:active{
+    transform: scale(0.9);
+    transition: 50ms;
+}
+
+.salida-encriptador{
+    margin-top: -50px;
+    width: 400px;
+    height: 750px;
+    background: rgba(141, 167, 154, 0.6);
+    text-align: center;
+    box-shadow: 0px 0px 20px #52685d;
+}
+
+#info-salida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    padding: 20px;
+}
+
+.salida-encriptador img{
+    display: flex;
+    width: 90%;
+    border-radius: 18px;
+    border: 1px solid;
+    opacity: 0.8;
+    margin: auto;
+}
+
+.salida-encriptador h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.salida-encriptador p{
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#info-encriptada{
+    display: none;
+    height: 95%;
+    padding: 5px;
+}
+
+#area-encriptada{
+    border: none;
+    padding: 10px;
+    background: transparent;
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+    font-family: 'Komigo';
+    color: #205c3e;
+    resize: none;
+    outline: none;
+}
+
+#aviso-copiado{
+    display: none;
+    width: 100%;
+    color: #00dd00;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    width: 60%;
+    height: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#pie-pagina{
+    display: flex;
+    width: 100%;
+    background: rgb(245, 217, 170);
+    height: 84px;
+    border: 2px solid;
+    box-shadow: 7px 7px;  
+    justify-content: center;
+    align-items: center;
+}
+
+header:hover, footer:hover{
+    transform: scale(0.99);
+    transition: 500ms;
+}
+
+@media screen and (max-width:1100px) {
+    html,main{
+        width: auto;
+        transition: 1s;
+    }
+
+    header, footer{
+        width: 90%;
+        margin: 20px;
+        transition: 1s;
+    }
+
+    .entrada-encriptador{
+        width: 60%;
+        margin-right: 20px;
+        transition: 1s;
+    }
+
+    .salida-encriptador{
+        margin-left: 20px;
+        margin-top: 0;
+        width: 30%;
+        transition: 1s;
+    } 
+
+    .boton-copiar{
+        width: 80%;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html{
+        height: auto;
+        transition: 1s;
+    }
+    
+    main{
+        height: auto;
+        display: block;
+        transition: 1s;
+    }
+
+    .entrada-encriptador{
+        display: block;
+        width: 90%;
+        height: auto;
+        transition: 1s;
+    }
+
+    .salida-encriptador{
+        display: block;
+        width: 90%;
+        transition: 1s;
+        height: auto;
+    }
+
+    .salida-encriptador img{
+        display: none;
+        transition: 1s;
+    }
+
+    #info-encriptada, #area-encriptada{
+        height: auto;
+        transition: 1s;
+    }
+
+@media screen and (max-width:522px) {
+        html{
+            width: auto;
+        }
+
+        header{
+            display: block;
+            transition: 1s;
+        } 
+        
+        #logo-alura{
+            margin: 0 auto 5px;
+            transition: 1s;
+        }
+    }
+
+}
+
+@media screen and (max-width:375px){
+    html, body, main{
+        width: 100%;
+        margin: auto;
+    }
+    
+    header{
+        margin: 0 auto 20px;
+    }  
+    
+    section{
+        width: 100%;
+        margin: auto;
+    }
+
+    .entrada-encriptador, .salida-encriptador{
+        width: 85%;
+        margin: 10px auto 10px;
+    }
+
+    footer{
+        
+    }
+}

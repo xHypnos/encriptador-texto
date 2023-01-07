@@ -27,7 +27,7 @@
         <section class="entrada-encriptador">
             <textarea name="" id="area-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div id="aviso">
-                <p id="msj-aviso"><a id="simbolo-aviso">&excl;</a> Solo letras minúsculas y sin acentos</p>
+                <p id="msj-aviso"><a id="simbolo-aviso">&excl;</a> Solo letras minusculas y sin acentos</p>
             </div>
             <div id="botonesED">
                 <input onclick="encriptar()" class="boton-encriptar" type="button" value="Encriptar">
@@ -37,8 +37,8 @@
         <section class="salida-encriptador">
             <div id="info-salida">
                 <div>
-                    <img src="img/Muñeco.png" alt="Imagen-mensaje-no-encontrado">
-                    <h3>Ningún mensaje fue encontrado</h3>
+                    <img id="imagen-sencriptador" src="img/Muñeco.png" alt="Imagen-mensaje-no-encontrado">
+                    <h3>Ningun mensaje fue encontrado</h3>
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
@@ -51,7 +51,9 @@
     </main>
 
     <footer>
-        <p id="pie-pagina">© 2023 Pagina desarrollada por Andrés Montes</p>
+        <div id="pie-pagina">
+            <p>© 2023 Pagina desarrollada por Andres Montes</p>    
+        </div>
     </footer>
 </body>
 </html>

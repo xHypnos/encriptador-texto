@@ -17,11 +17,12 @@ header{
 #contenedor-temas h3{
     color: #0A3871;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 5px;
 }
 
 #lista-temas li{
+    font-size: 18px;
     cursor: pointer;
     display: inline;
     margin: 10px;

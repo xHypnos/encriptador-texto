@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+header, main, footer {
+    display: none;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    background: top/30% no-repeat url("/img/construccion.jpg");
+}
+
+body{
+    animation-name: develop;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+/*Animaciones hechas por Laurent Batel
+ https://www.behance.net/laurentbatel */
+ 
+@-webkit-keyframes develop{
+    0%, 17%{
+        width: 100%;
+        height: 100%;
+        background: bottom no-repeat url("/img/diseñadores-1.gif");
+    }
+
+    17%, 34%{
+        width: 100%;
+        height: 100%;
+        background: bottom no-repeat url("/img/diseñadores-2.gif");
+    }
+
+    34%, 51%{
+        width: 100%;
+        height: 100%;
+        background: bottom no-repeat url("/img/diseñadores-3.gif");
+    }
+
+    51%, 68%{
+        width: 100%;
+        height: 100%;
+        background: bottom no-repeat url("/img/diseñadores-4.gif");
+    }
+
+    68%, 85%{
+        width: 100%;
+        height: 100%;
+        background: bottom no-repeat url("/img/disleadores-5.gif");
+    }
+
+    85%, 100%{
+        width: 100%;
+        height: 100%;
+        background: bottom no-repeat url("/img/diseñadores-5c.gif");
+    }
+}

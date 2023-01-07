@@ -34,7 +34,7 @@ header img{
 }
 
 #contenedor-temas{
-    margin: auto 10%;
+    margin: auto;
     text-align: center;
 }
 
@@ -50,6 +50,18 @@ header img{
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+
+#titulo{
+    margin: auto;
+    display: flex;
+    font-weight: bold;
+    width: auto;
+}
+
+#titulo h3{
+    text-shadow: 0 0 5px black;
+    font-size: 32px;
 }
 
 main{
@@ -297,22 +309,24 @@ header:hover, footer:hover{
         height: auto;
         transition: 1s;
     }
+}
 
 @media screen and (max-width:522px) {
-        html{
-            width: auto;
-        }
-
-        header{
-            display: block;
-            transition: 1s;
-        } 
-        
-        #logo-alura{
-            margin: 0 auto 5px;
-            transition: 1s;
-        }
+    html{
+        width: auto;
+        transition: 1s;
     }
+
+    header{
+        display: block;
+        transition: 1s;
+    } 
+        
+    #logo-alura{
+        margin: 0 auto 5px;
+        transition: 1s;
+    }
+    
 
 }
 
@@ -320,19 +334,23 @@ header:hover, footer:hover{
     html, body, main{
         width: 100%;
         margin: auto;
+        transition: 1s;
     }
     
     header{
         margin: 0 auto 20px;
+        transition: 1s;
     }  
     
     section{
         width: 100%;
         margin: auto;
+        transition: 1s;
     }
 
     .entrada-encriptador, .salida-encriptador{
         width: 85%;
         margin: 10px auto 10px;
+        transition: 1s;
     }
 }

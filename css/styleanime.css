@@ -13,7 +13,7 @@ html{
 body{
     height: 100%;
     font-family: 'Komigo';
-    background: center/1080px no-repeat url("/img/fondo-anime.webp") !important;
+    background: center/1080px no-repeat url("/img/fondoanime.webp") !important;
 }
 
 header{
@@ -131,7 +131,7 @@ section{
 
 .boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
     zoom: 105%;
-    background: center no-repeat url("/img/cara-anya.jpg");
+    background: center no-repeat url("/img/caraanya.jpg");
     transition: 500ms;
     font-size: 24px;
 }
@@ -334,9 +334,5 @@ header:hover, footer:hover{
     .entrada-encriptador, .salida-encriptador{
         width: 85%;
         margin: 10px auto 10px;
-    }
-
-    footer{
-        
     }
 }

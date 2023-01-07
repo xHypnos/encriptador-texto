@@ -4,11 +4,11 @@ let mensajePredeterminado = "Solo letras minusculas y sin acentos";
 function cambiarTema(temaSeleccionado){
     let tema = "";
     if (temaSeleccionado == "anime"){
-        tema = "css/style-anime.css";
-        document.getElementById("logo-alura").src = "/img/logo-anime.png";
-        document.getElementById("imagen-sencriptador").src = "/img/anya-lupa.png";
+        tema = "css/styleanime.css";
+        document.getElementById("logo-alura").src = "/img/logoanime.png";
+        document.getElementById("imagen-sencriptador").src = "/img/anyalupa.png";
     }else if(temaSeleccionado == "dev"){
-        tema = "css/style-dev.css";
+        tema = "css/styledev.css";
     }else if(temaSeleccionado == "alura"){
         tema = "css/style.css";
         document.getElementById("logo-alura").src = "/img/Logo.png";

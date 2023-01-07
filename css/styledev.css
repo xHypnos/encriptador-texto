@@ -24,36 +24,36 @@ body{
     0%, 17%{
         width: 100%;
         height: 100%;
-        background: bottom no-repeat url("/img/diseñadores-1.gif");
+        background: bottom no-repeat url("/img/diseñadores1.gif");
     }
 
     17%, 34%{
         width: 100%;
         height: 100%;
-        background: bottom no-repeat url("/img/diseñadores-2.gif");
+        background: bottom no-repeat url("/img/diseñadores2.gif");
     }
 
     34%, 51%{
         width: 100%;
         height: 100%;
-        background: bottom no-repeat url("/img/diseñadores-3.gif");
+        background: bottom no-repeat url("/img/diseñadores3.gif");
     }
 
     51%, 68%{
         width: 100%;
         height: 100%;
-        background: bottom no-repeat url("/img/diseñadores-4.gif");
+        background: bottom no-repeat url("/img/diseñadores4.gif");
     }
 
     68%, 85%{
         width: 100%;
         height: 100%;
-        background: bottom no-repeat url("/img/disleadores-5.gif");
+        background: bottom no-repeat url("/img/disleadores5.gif");
     }
 
     85%, 100%{
         width: 100%;
         height: 100%;
-        background: bottom no-repeat url("/img/diseñadores-5c.gif");
+        background: bottom no-repeat url("/img/diseñadores5c.gif");
     }
 }
